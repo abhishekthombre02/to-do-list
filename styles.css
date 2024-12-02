@@ -1,0 +1,120 @@
+/* General Styling for the Container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Entry Section */
+.task-entry {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#task {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#add-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+#add-btn:hover {
+    background-color: #45a049;
+}
+
+/* Task List Section */
+h4 {
+    color: #333;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Pending Task List */
+#task-list li {
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#task-list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Completed Task List */
+#completed-list li {
+    color: gray;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Remove Button Styling */
+button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+/* Style for Hovering Tasks */
+li:hover button {
+    background-color: #e60000;
+}
+
+/* Clear all default styles for the list items */
+li span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#task-list li span,
+#completed-list li span {
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}

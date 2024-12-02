@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="task-entry">
+            <h2>My To Do List</h2>
+            <input type="text" id="task" name="task" placeholder="Enter a new task">
+            <span id="add-btn">Add</span>
+        </div>
+
+        <h4>Pending Tasks <span id="pendingCount">0</span></h4>
+        <hr>
+        <ol id="pendingTask-list">
+            
+        </ol>
+
+        <h4>Completed Tasks <span id="completedCount">0</span></h4>
+        <hr>
+        <ol id="completedTask-list">
+            
+        </ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
