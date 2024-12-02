@@ -118,3 +118,8 @@ li span {
     padding: 5px;
     border-radius: 4px;
 }
+@media (max-width: 768px){
+    #task{
+        width: 60%;
+    }
+}
